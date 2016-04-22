@@ -21,7 +21,7 @@ export default class Clients extends Component {
 				<ClientLogo url="https://terrabella.google.com/" source={images.skybox} />
 				<ClientLogo url="http://www.projectara.com/" source={images.atap} />
 				<ClientLogo url="https://twitter.com/catalinalabs" source={images.catalina} />
-				<ClientLogo url="https://salute.io" source={images.salute} />
+				<ClientLogo url="http://salute.io" source={images.salute} />
 			</View>
 		);
 	}
