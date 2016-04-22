@@ -24,10 +24,11 @@ module.exports = {
 	},
 	devServer: {
 		contentBase: "./public",
-			noInfo: true, //  --no-info option
-			hot: true,
-			inline: true
-		},
+		noInfo: true, //  --no-info option
+		hot: true,
+		inline: true,
+		host: '0.0.0.0'
+	},
 	plugins: [
 		new webpack.NoErrorsPlugin()
 	]
