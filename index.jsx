@@ -35,5 +35,5 @@ let styles = StyleSheet.create({
 });
 
 // App registration and rendering
-AppRegistry.registerComponent('HireMe', () => App);
-AppRegistry.runApplication('HireMe', { rootTag: document.getElementById('react-root') });
+AppRegistry.registerComponent('ReactNativeWebStarter', () => App);
+AppRegistry.runApplication('ReactNativeWebStarter', { rootTag: document.getElementById('react-root') });

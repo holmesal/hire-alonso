@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot",
-    "gh-pages": "git subtree push --prefix public native-starter gh-pages"
+    "gh-pages": "git subtree push --prefix public origin gh-pages"
   },
   "repository": {
     "type": "git",
