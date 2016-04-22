@@ -44,7 +44,7 @@ export class SectionHeader extends Component {
                     letterSpacing: 2,
                     borderStyle: 'solid',
                     paddingBottom: 6,
-                    marginTop: 80,
+                    marginTop: 200,
                     marginBottom: 24,
                     borderWidth: 0,
                     borderBottomWidth: 2,

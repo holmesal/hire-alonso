@@ -16,7 +16,7 @@ export default class Clients extends Component {
 	render() {
 		return (
 			<View style={styles.wrapper}>
-				<SectionHeader>CLIENTS</SectionHeader>
+				<SectionHeader style={{marginTop: 60}}>CLIENTS</SectionHeader>
 
 				<ClientLogo url="https://terrabella.google.com/" source={images.skybox} />
 				<ClientLogo url="http://www.projectara.com/" source={images.atap} />
