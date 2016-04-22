@@ -38,11 +38,13 @@ export default class SexyBackground extends Component {
 		var pairs = [];
 		var center = space.size.$divide(2);
 		var mouse = center.clone();
-		mouse.y = -50;
+		mouse.x = space.size.x + 50;
+		mouse.y = 50;
 		var mousing = false;
 
 		// Initial direction
-		var target = center;
+		var target = center.clone();
+		target.x = -50;
 		console.info('initial target', target)
 		//var moveSpeed = 0.003;
 		var moveSpeed = 0.008;
@@ -52,10 +54,21 @@ export default class SexyBackground extends Component {
 		var north = new Point([space.size.x/2, 20, 0]);
 		console.info(north)
 
-		var steps = 100;
-		var rx = space.size.x * 0.4;
-		var ry = space.size.y * 0.4;
-		var dr = Math.min( space.size.x, space.size.y ) * 0.4 / steps;
+		const bigMonitorArea = 1920 * 1200;
+		const bigMonitorNumPoints = 100;
+		const currentArea = space.size.x * space.size.y;
+		const areaFraction = currentArea / bigMonitorArea;
+		const numPoints = Math.round(bigMonitorNumPoints * Math.sqrt(Math.sqrt(areaFraction)));
+
+		var steps = numPoints;
+		var rx = space.size.x * 0.45;
+		var ry = space.size.y * 0.45;
+
+		// Alternate method - ensures bounds always covered
+		//var dr = Math.max( space.size.x, space.size.y ) * 0.5 / steps; // Whoa try this shit out!
+		var dr = Math.max( space.size.x, space.size.y ) * 0.4;
+		rx = dr;
+		ry = dr;
 
 		// create points
 		for (var i=0; i<steps; i++) {
@@ -115,7 +128,8 @@ export default class SexyBackground extends Component {
 					var rotationFactor = pr.midpoint().distance(center);
 
 					// pr.rotate2D( Const.one_degree/10 * rotationFactor/500, center );
-					pr.rotate2D( Const.one_degree/20, center );
+				//	pr.rotate2D( Const.one_degree/20, center );
+					pr.rotate2D( Const.one_degree/16, center );
 
 					// check collinearity with mouse, and draw a line with different color
 					var col = pr.collinear(mouse);

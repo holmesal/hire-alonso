@@ -12,6 +12,8 @@ import { PrimaryText, SectionHeader } from '../type';
 import Header from './Header';
 import Clients from './Clients';
 import Tools from './Tools';
+import FeaturedApp from './FeaturedApp';
+import Contact from './Contact';
 
 export default class Portfolio extends Component {
 
@@ -27,6 +29,10 @@ export default class Portfolio extends Component {
 					<Clients />
 
 					<Tools />
+
+					<FeaturedApp />
+
+					<Contact />
 
 				</View>
 
