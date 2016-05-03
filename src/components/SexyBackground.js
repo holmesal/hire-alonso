@@ -211,6 +211,7 @@ export default class SexyBackground extends Component {
 				} else if (type == 'up') {
 					pickNewTarget();
 					mousing = false;
+					moveSpeed = defaultMoveSpeed;
 				}
 			}
 		});

@@ -9,7 +9,7 @@ import React, {
 } from 'react-native';
 
 import openTab from '../utils/openTab';
-import {PrimaryText} from '../type';
+import {PrimaryText, Prose} from '../type';
 
 export default class ClientLogo extends Component {
 
@@ -41,5 +41,8 @@ let styles = StyleSheet.create({
 	image: {
 		height: 200,
 		flexWrap: 'wrap'
+	},
+	label: {
+		textAlign: 'center'
 	}
 });
