@@ -47,7 +47,8 @@ export default class SexyBackground extends Component {
 		target.x = -50;
 		console.info('initial target', target)
 		//var moveSpeed = 0.003;
-		var moveSpeed = 0.008;
+		var moveSpeed, defaultMoveSpeed = 0.008;
+		var fastMoveSpeed = 0.05;
 
 		var nw = space.size.$multiply(0.1);
 		console.info(nw)
@@ -140,7 +141,8 @@ export default class SexyBackground extends Component {
 					if (!mousing) {
 						// If we're not already at the point
 						if (mouse.distance(target) < 1) {
-							pickNewTarget()
+							pickNewTarget();
+							moveSpeed = defaultMoveSpeed;
 						}
 						// Figure out the heading to the next target
 						var targetHeading = new Pair(mouse).to(target).direction().normalize();
@@ -197,11 +199,15 @@ export default class SexyBackground extends Component {
 				 //console.info(type)
 				//if (space.touchesToPoints( evt ).length > 0) alert('touching!')
 				if (type=="move") {
-					mousing = true;
-					mouse.set(x,y);
+				//	mousing = true;
+				//	mouse.set(x,y);
+					target = new Point(x,y);
+					moveSpeed = fastMoveSpeed;
 				} else if (type == 'out') {
 					console.info('mouseout!')
 					mousing = false;
+					moveSpeed = defaultMoveSpeed;
+					pickNewTarget();
 				} else if (type == 'up') {
 					pickNewTarget();
 					mousing = false;

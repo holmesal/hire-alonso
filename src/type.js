@@ -44,7 +44,7 @@ export class SectionHeader extends Component {
                     letterSpacing: 2,
                     borderStyle: 'solid',
                     paddingBottom: 6,
-                    marginTop: 200,
+                    marginTop: 120,
                     marginBottom: 24,
                     borderWidth: 0,
                     borderBottomWidth: 2,
@@ -89,6 +89,26 @@ export class Prose extends Component {
                 },
                 this.props.style
             ]}>{this.props.children}</Text>
+		);
+	}
+}
+
+export class Link extends Component {
+
+	render() {
+		return (
+			<Text {...this.props} style={[
+            		baseTextStyle,
+                {
+
+                    //fontSize: 16,
+                    color: colors.blue,
+                    fontWeight: '600',
+                    //letterSpacing: 1.07,
+                    //lineHeight: '28px'
+                },
+                this.props.style
+            ]}><a target="_blank" href={this.props.to} style={{textDecoration: 'none', color: 'inherit'}}>{this.props.children}</a></Text>
 		);
 	}
 }

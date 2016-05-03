@@ -17,7 +17,7 @@ export default class Tools extends Component {
 		return (
 			<View style={styles.wrapper}>
 
-				<SectionHeader>TOOLS</SectionHeader>
+				<SectionHeader>TOOLS I USE</SectionHeader>
 
 				<View style={styles.info}>
 					<PrimaryText>Every craftsman has his tools.</PrimaryText>

@@ -11,6 +11,7 @@ import colors from '../colors';
 import { PrimaryText, SectionHeader } from '../type';
 import Header from './Header';
 import Clients from './Clients';
+import Things from './Things';
 import Tools from './Tools';
 import FeaturedApp from './FeaturedApp';
 import Contact from './Contact';
@@ -27,6 +28,8 @@ export default class Portfolio extends Component {
 					<PrimaryText style={styles.tagline}>I help innovative companies build delightful mobile apps using the best technologies in the world.</PrimaryText>
 
 					<Clients />
+
+					<Things />
 
 					<Tools />
 

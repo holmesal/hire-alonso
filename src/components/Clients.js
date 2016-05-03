@@ -16,12 +16,15 @@ export default class Clients extends Component {
 	render() {
 		return (
 			<View style={styles.wrapper}>
-				<SectionHeader style={{marginTop: 60}}>CLIENTS</SectionHeader>
+				<SectionHeader style={{marginTop: 60}}>FOLKS I'VE WORKED WITH</SectionHeader>
 
-				<ClientLogo url="https://terrabella.google.com/" source={images.skybox} />
-				<ClientLogo url="http://www.projectara.com/" source={images.atap} />
-				<ClientLogo url="https://twitter.com/catalinalabs" source={images.catalina} />
-				<ClientLogo url="http://salute.io" source={images.salute} />
+				<View style={styles.grid}>
+					<ClientLogo url="https://terrabella.google.com/" source={images.skybox} label="Software Engineering" />
+					<ClientLogo url="http://www.projectara.com/" source={images.atap} label="Design Concepting" />
+					<ClientLogo url="https://twitter.com/catalinalabs" source={images.catalina}  label="Mobile Prototyping" />
+					<ClientLogo url="http://salute.io" source={images.salute}  label="Mobile Prototyping" />
+					<ClientLogo url="https://robinpowered.com/" source={images.robin}  label="Hardware Prototyping" />
+				</View>
 			</View>
 		);
 	}
@@ -29,6 +32,13 @@ export default class Clients extends Component {
 
 let styles = StyleSheet.create({
 	wrapper: {
-		alignItems: 'center'
+		alignItems: 'center',
+		alignSelf: 'stretch'
+	},
+	grid: {
+		flexDirection: 'row',
+		alignSelf: 'stretch',
+		flexWrap: 'wrap',
+		justifyContent: 'center'
 	}
 });
