@@ -47,8 +47,9 @@ export default class SexyBackground extends Component {
 		target.x = -50;
 		console.info('initial target', target)
 		//var moveSpeed = 0.003;
-		var moveSpeed, defaultMoveSpeed = 0.008;
+		var defaultMoveSpeed = 0.008;
 		var fastMoveSpeed = 0.05;
+		var moveSpeed = defaultMoveSpeed;
 
 		var nw = space.size.$multiply(0.1);
 		console.info(nw)
