@@ -25,14 +25,15 @@ export default class Portfolio extends Component {
 
 				<View style={styles.body}>
 
-					
+					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>I'm a born dot-connector.</Text></PrimaryText>
 
-					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>"We have this crazy idea..."</Text></PrimaryText>
-					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>"We don't really know if it's possible, but..."</Text></PrimaryText>
-					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>"There's this thing we've been wanting to try out..."</Text></PrimaryText>
-					<PrimaryText style={styles.tagline}>My most interesting work usually starts with a conversation like this. I love these conversations.</PrimaryText>
-					<PrimaryText style={styles.tagline}>What I'm best at is connecting the dots - building the right thing, at the right time, with the best available technologies.</PrimaryText>
-					<PrimaryText style={styles.tagline}>I ask questions until I understand what's really important to you and your customers, and then I sprint until it's shipped.</PrimaryText>
+					<PrimaryText style={styles.tagline}>I do my best work when part of my job is to define the problem, as well as build the solution.</PrimaryText>
+
+					<PrimaryText style={styles.tagline}>So I start by asking questions, until I understand what's important.</PrimaryText>
+
+					<PrimaryText style={styles.tagline}>Then I pull out the best technologies available, and sprint until it's shipped.</PrimaryText>
+
+
 
 					<Clients />
 
