@@ -21,6 +21,7 @@ export default class Clients extends Component {
 				<View style={styles.grid}>
 					<ClientLogo url="https://terrabella.google.com/" source={images.skybox} label="Software Engineering" />
 					<ClientLogo url="http://www.projectara.com/" source={images.atap} label="Design Concepting" />
+					<ClientLogo url="http://www.boldlisting.com/" source={images.bold} label="Architecture" />
 					<ClientLogo url="https://twitter.com/catalinalabs" source={images.catalina}  label="Mobile Prototyping" />
 					<ClientLogo url="http://salute.io" source={images.salute}  label="Mobile Prototyping" />
 					<ClientLogo url="https://robinpowered.com/" source={images.robin}  label="Hardware Prototyping" />

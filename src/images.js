@@ -1,9 +1,10 @@
 
 
 export const atap = require('../assets/images/atap@2x.png');
+export const bicycle = require('../assets/images/bicycle@2x.png');
+export const bold = require('../assets/images/bold@2x.png');
 export const catalina = require('../assets/images/catalina@2x.png');
 export const chorus = require('../assets/images/chorus@2x.png');
-export const bicycle = require('../assets/images/bicycle@2x.png');
 export const conference = require('../assets/images/conference@2x.png');
 export const graphql = require('../assets/images/graphql@2x.png');
 export const mail = require('../assets/images/mail@2x.png');
