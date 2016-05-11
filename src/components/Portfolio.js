@@ -25,11 +25,11 @@ export default class Portfolio extends Component {
 
 				<View style={styles.body}>
 
-					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>I'm a born dot-connector.</Text></PrimaryText>
+					<PrimaryText style={styles.tagline}><Text style={{fontWeight: '600'}}>I connect dots.</Text></PrimaryText>
 
-					<PrimaryText style={styles.tagline}>I do my best work when part of my job is to define the problem, as well as build the solution.</PrimaryText>
+					<PrimaryText style={styles.tagline}>I do my best work when part of my job is to define the problem, as well as to design and build the solution.</PrimaryText>
 
-					<PrimaryText style={styles.tagline}>So I start by asking questions, until I understand what's important.</PrimaryText>
+					<PrimaryText style={styles.tagline}>So I start by asking questions, until I understand what's important to your team, your users, and your company.</PrimaryText>
 
 					<PrimaryText style={styles.tagline}>Then I pull out the best technologies available, and sprint until it's shipped.</PrimaryText>
 

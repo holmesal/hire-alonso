@@ -29,7 +29,7 @@ export default class Things extends Component {
 
 					<View style={styles.row}>
 						<Image style={styles.icon} source={images.satellite} />
-						<PrimaryText>A webapp to consume information provided by two minifridge-sized <Link to="https://terrabella.google.com/">earth-imaging satellites.</Link></PrimaryText>
+						<PrimaryText>A webapp connected to <Link to="https://terrabella.google.com/">two earth-imaging satellites</Link> that helps users make key decisions using geospatial data.</PrimaryText>
 					</View>
 
 					<View style={styles.row}>

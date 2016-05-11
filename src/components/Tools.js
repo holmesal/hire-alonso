@@ -20,8 +20,7 @@ export default class Tools extends Component {
 				<SectionHeader>TOOLS I USE</SectionHeader>
 
 				<View style={styles.info}>
-					<PrimaryText>Every craftsman has his tools.</PrimaryText>
-					<PrimaryText>Here's what I use:</PrimaryText>
+					<PrimaryText>Every craftsman has his tools. Here's what I use:</PrimaryText>
 				</View>
 
 				<Tool name="React Native"
